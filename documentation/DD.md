@@ -76,5 +76,3 @@ Update:
 Delete:
 * DefaultDelete<T>: The default implementation
 * SimpleDelete<T>: A simple way to delete objects
-
-
