@@ -7,7 +7,7 @@
 ## What Are Handlers?
 Elepy knows the concept of Handlers. Handlers are how Elepy takes in an HTTP Request and produces an action and an HTTP Response.
 
-Elepy has 5 handlers: Create, FindOne, FindMany, Update and Delete. All* handlers have one method that they need to implement. This method has 4 params:  an HTTP Context, a Model Description, a CRUD Object and an ObjectMapper.
+Elepy has 5 handlers: CreateHandler, FindOneHandler, FindManyHandler, UpdateHandler and DeleteHandler. All* handlers have one method that they need to implement. This method has 4 params:  an HTTP Context, a Model Description, a CRUD Object and an ObjectMapper.
 
 *Update has two separate, but similar methods for PUT and PATCH requests.
 
