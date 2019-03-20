@@ -67,7 +67,7 @@ FindMany:
 * MappedFindMany<T, R>: Use this class to map the results of a RestModel to another type.
 
 FindOne & FindMany:
-* MappedFind<T, R>: This is a combination of MappedFindMany and MappedFindMany. Use this class if you want to always map from T to R. Regardless if you are finding one or many.
+* MappedFind<T, R>: This is a combination of MappedFindMany and MappedFindMany. Use this class if you want to always map from a RestModel to another type, regardless if you are finding one or many.
 
 Update:
 * DefaultUpdate<T>:  The default implementation
