@@ -43,7 +43,7 @@ There are 2 custom tags you should know about, though. `<style>` and `<styleshee
 
 The `<style></style>` tag is what you should expect it to be, a place where you can put your CSS. This will get placed as the last tag in the `<head></head>` of your page. You can have multiple `<style/>` tags.
 
-The `<stylesheet src = "" />` tag is where you can point to additional stylesheets. They also appear in your header.
+The `<stylesheet src = "" />` tag is where you can point to additional stylesheets. They also appear in the `<head></head>`.
 
 # How Elepy uses this editor
 Elepy uses this editor to handle pages in https://elepy.com/docs. Further customization was applied to have it [integrate with GitHub](https://github.com/RyanSusana/elepy-wiki). It works like a charm ;).
