@@ -33,6 +33,8 @@ class MarkdownPageView : RestModelView {
     }
 }
 ```
+The MarkdownPageView __must__ implement the RestModelView interface from Elepy. It has one method: a String that you must return. This String is basically the overridden HTML content of your RestModel in your CMS.
+
 The TemplateCompiler is an uninteresting dependency. What it is, is that it looks for a template file in the ClassPath resources and returns it as a String. The more interesting thing is the `"custom-models/markdown-page/markdown-edit.html"`.
 
 It's basically an HTML file that you can find [here](https://github.com/RyanSusana/elepy-docs/blob/master/src/main/resources/custom-models/markdown-page/markdown-edit.peb).
