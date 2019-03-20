@@ -1,7 +1,15 @@
 # Download
 
 ## Elepy 2
-Elepy 2 is the latest version of Elepy, [and is currently in BETA](https://github.com/RyanSusana/elepy/projects/2)
+Elepy 2 is the latest version of Elepy, [and is currently in BETA](https://github.com/RyanSusana/elepy/projects/2). The latest version can be downloaded with Maven:
+
+```xml
+<dependency>
+    <groupId>com.elepy</groupId>
+    <artifactId>elepy-core</artifactId>
+    <version>2.0.0-beta-3</version>
+</dependency>
+```
 ## Elepy 1
 ### Elepy Core
 The core module of Elepy, can be installed with maven. This includes the API generation and the core functionality of Elepy. For the CMS you must include the `elepy-admin` dependency.
@@ -11,7 +19,6 @@ The core module of Elepy, can be installed with maven. This includes the API gen
     <artifactId>elepy-core</artifactId>
     <version>1.8.0</version>
 </dependency>
-
 ```
 
 ### Elepy Admin
@@ -22,5 +29,4 @@ This is the admin module of Elepy. It contains the powerful content management s
     <artifactId>elepy-admin</artifactId>
     <version>1.8.0</version>
 </dependency>
-
 ```
