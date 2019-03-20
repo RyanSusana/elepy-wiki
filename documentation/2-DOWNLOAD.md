@@ -11,6 +11,7 @@ Elepy 2 is the latest version of Elepy, [and is currently in BETA](https://githu
 </dependency>
 ```
 ## Elepy 1
+Elepy 1.8.0 is the most stable non-beta release of Elepy. To use it, you must include these two dependencies.
 ### Elepy Core
 The core module of Elepy, can be installed with maven. This includes the API generation and the core functionality of Elepy. For the CMS you must include the `elepy-admin` dependency.
 ``` xml
