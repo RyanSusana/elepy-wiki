@@ -16,7 +16,7 @@ data class MarkdownPage @JsonCreator constructor(
         @JsonProperty("title") @Searchable @Unique val title: String,
         @JsonProperty("slug") @Searchable @Unique val slug: String,
         @JsonProperty("live") @TrueFalse(trueValue = "Live", falseValue = "Draft") val live: Boolean?,
-        @JsonProperty("content") var content: String?
+        @JsonProperty("content") val content: String?
 )
 ```
 
