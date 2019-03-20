@@ -57,7 +57,7 @@ This annotation signifies that a field is a boolean. It comes with two optional 
 
 Example usage:
 ```java
-@Boolean(trueValue = "This product can be deleted", falseValue = "This product can't be deleted")
+@TrueFalse(trueValue = "This product can be deleted", falseValue = "This product can't be deleted")
 private boolean deletable;
 ```
 ### Number
