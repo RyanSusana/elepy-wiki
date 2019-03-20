@@ -9,7 +9,7 @@ This is a guide to the many available annotations of Elepy.
     * [@Searchable](#searchable)
     * [@Uneditable](#uneditable)
     * [@PrettyName](#prettyname)
-    * [@Boolean](#boolean)
+    * [@TrueFalse](#truefalse)
     * [@Number](#number)
     * [@Text](#text)
     * [@DateTime](#datetime)
@@ -52,7 +52,7 @@ This annotation signifies that a field can only be set once. If you try to updat
 ### PrettyName
 This annotation gives a field a pretty name, `@PrettyName("a nice name")`. Pretty names get shown in error messages and on the CMS.
 
-### Boolean
+### TrueFalse
 This annotation signifies that a field is a boolean. It comes with two optional properties, `trueValue` and `falseValue`. These values describe what true and false mean in the context of your application.
 
 Example usage:
