@@ -21,6 +21,7 @@ This is a guide to the many available annotations of Elepy.
     * [@Find](#find)
     * [@Update](#update)
     * [@Delete](#delete)
+    * [@View](#view)
     * [@Dao](#dao)
     * [@DaoProvider](#daoprovider)
     * [@IdProvider](#idprovider)
@@ -112,4 +113,16 @@ _coming soon..._
 _coming soon..._
 
 ### Delete
+_coming soon..._
+
+### View
+_coming soon..._
+
+### Dao
+_coming soon..._
+
+### DaoProvider
+_coming soon..._
+
+### IdProvider
 _coming soon..._
