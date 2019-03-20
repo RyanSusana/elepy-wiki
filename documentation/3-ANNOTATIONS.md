@@ -22,10 +22,12 @@ This is a guide to the many available annotations of Elepy.
     * [@Find](#-find)
     * [@Update](#-update)
     * [@Delete](#-delete)
+    * [@Service](#-service)
     * [@View](#-view)
     * [@Dao](#-dao)
     * [@DaoProvider](#-daoprovider)
     * [@IdProvider](#-idprovider)
+    * [@ExtraRoutes](#-extraroutes)
 
 
 # Annotations
@@ -119,6 +121,8 @@ _coming soon..._
 ### @Delete
 _coming soon..._
 
+### @Service
+
 ### @View
 _coming soon..._
 
@@ -130,3 +134,5 @@ _coming soon..._
 
 ### @IdProvider
 _coming soon..._
+
+### @ExtraRoutes
