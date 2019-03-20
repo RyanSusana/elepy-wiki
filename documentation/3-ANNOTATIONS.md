@@ -29,7 +29,10 @@ This is a guide to the many available annotations of Elepy.
     * [@IdProvider](#-idprovider)
     * [@ExtraRoutes](#-extraroutes)
 * [Dependency Injection and Routing](#dependency-injection-and-routing)
-
+    * [@Route](#-route)
+    * [@Inject](#-inject)
+    * [@Tag](#-tag)
+    * [@ElepyConstructor](-elepyconstructor)
 
 
 # Annotations
