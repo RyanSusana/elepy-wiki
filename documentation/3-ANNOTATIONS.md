@@ -3,28 +3,29 @@ This is a guide to the many available annotations of Elepy.
 
 # Table of Annotations
 * [Field Annotations](#field-annotations)
-    * [@Identifier](#identifier)
-    * [@Unique](#unique)
-    * [@Required](#required)
-    * [@Searchable](#searchable)
-    * [@Uneditable](#uneditable)
-    * [@PrettyName](#prettyname)
-    * [@TrueFalse](#truefalse)
-    * [@Number](#number)
-    * [@Text](#text)
-    * [@DateTime](#datetime)
-    * [@Importance](#importance)
-    * [@Hidden](#hidden)
+    * [@Identifier](#-identifier)
+    * [@Unique](#-unique)
+    * [@Required](#-required)
+    * [@Searchable](#-searchable)
+    * [@Uneditable](#-uneditable)
+    * [@PrettyName](#-prettyname)
+    * [@TrueFalse](#-truefalse)
+    * [@Number](#-number)
+    * [@Text](#-text)
+    * [@DateTime](#-datetime)
+    * [@Importance](#-importance)
+    * [@Hidden](#-hidden)
 * [RestModel Annotations](#restmodel-annotations)
-    * [@RestModel](#restmodel)
-    * [@Create](#create)
-    * [@Find](#find)
-    * [@Update](#update)
-    * [@Delete](#delete)
-    * [@View](#view)
-    * [@Dao](#dao)
-    * [@DaoProvider](#daoprovider)
-    * [@IdProvider](#idprovider)
+    * [@RestModel](#-restmodel)
+    * [@Evaluators](#-evaluators)
+    * [@Create](#-create)
+    * [@Find](#-find)
+    * [@Update](#-update)
+    * [@Delete](#-delete)
+    * [@View](#-view)
+    * [@Dao](#-dao)
+    * [@DaoProvider](#-daoprovider)
+    * [@IdProvider](#-idprovider)
 
 
 # Annotations
@@ -36,24 +37,24 @@ Field annotations can be marked on any field in your RestModel.
 This annotation signifies that a field is the identifying field of a RestModel. A RestModel can only have one `@Identifier`. Furthermore, the supported Identifier types are String, Long or Integer. 
 If no @Identifier is used, Elepy will look for a field with the name 'id', or annotated with `@JsonProperty("id")`
 
-### Unique
+### @Unique
 This annotation signifies that a field is unique. It uses `IntegrityEvaluator` and the `Crud` method `#searchInField(Field, String)` to test the uniqueness of a field.
 
-### Required
+### @Required
 This annotation signifies that a field is required in all circumstances. If no value is provided for this field in an update or create, an error should be thrown and displayed in a Restful response. This gets handled by the `ObjectEvaluator`
 
-### Searchable
+### @Searchable
 This annotation signifies that a field is searchable, and should be considered implemented in the `Crud` interface. When you mark a field as searchable, you say that a field should be able to be queried for.
 
 By default, all @Searchable fields can be queried for by specifying a 'q' query parameter in a GET request.
 
-### Uneditable
+### @Uneditable
 This annotation signifies that a field can only be set once. If you try to update the field, an error should be thrown. This error gets thrown by the `ObjectUpdateEvaluator` and gets shown in the Restful Response.
 
-### PrettyName
+### @PrettyName
 This annotation gives a field a pretty name, `@PrettyName("a nice name")`. Pretty names get shown in error messages and on the CMS.
 
-### TrueFalse
+### @TrueFalse
 This annotation signifies that a field is a boolean. It comes with two optional properties, `trueValue` and `falseValue`. These values describe what true and false mean in the context of your application.
 
 Example usage:
@@ -61,7 +62,7 @@ Example usage:
 @TrueFalse(trueValue = "This product can be deleted", falseValue = "This product can't be deleted")
 private boolean deletable;
 ```
-### Number
+### @Number
 This annotation signifies that a field is a number. It comes with three optional properties, minimum, maximum and value(NumberType). The minimum and maximum properties get asserted by the `ObjectEvaluator'
 
 Example usage
@@ -69,25 +70,25 @@ Example usage
 @Number(minimum = 0, maximum = 1000, value = NumberType.DECIMAL)
 private BigDecimal price;
 ```
-### Text
+### @Text
 This annotation signifies that the value of a field is a String value. It comes with three optional properties, minimumLength, maximumLength and value(TextType). The minimumLength and maximumLength properties get asserted by the `ObjectEvaluator`. The value(or TextType) changes the way the field is presented in the CMS.
 
 ```java
 @Text(minimumLength = 50, maximumLength = 350, value = TextType.MARKDOWN)
 private String productDescription;
 ```
-### DateTime
+### @DateTime
 This annotation signifies that the value of a field is a Date value. It comes with three optional properties, includeTime, minimumDate and maximumDate. 
 
 
 _More about @DateTime coming soon..._
 
-### Importance
+### @Importance
 This annotation defines the order of a field in the CMS. The higher the importance, the higher it's listed in the CMS.
 
 Negative valued @Importance fields(like `@Importance(-5)`) don't get displayed in the table view of your data.
 
-### Hidden
+### @Hidden
 This annotation signifies that a field should be hidden from the CMS.
 
  
@@ -103,26 +104,29 @@ description: A brief description of the model
 defaultSortField: What field do you sort on by default?
 defaultSortDirection: How do you sort the model by default? ASCENDING or DESCENDING?
 ```
-### Create
+### @Evaluators
 _coming soon..._
 
-### Find
+### @Create
+_coming soon..._
+
+### @Find
 _coming soon..._ 
 
-### Update
+### @Update
 _coming soon..._
 
-### Delete
+### @Delete
 _coming soon..._
 
-### View
+### @View
 _coming soon..._
 
-### Dao
+### @Dao
 _coming soon..._
 
-### DaoProvider
+### @DaoProvider
 _coming soon..._
 
-### IdProvider
+### @IdProvider
 _coming soon..._
