@@ -1,6 +1,6 @@
 # Handlers
 ## Table of Contents
-* [What Are Handlers?](#what-are-handlers)
+* [What Are Handlers?](#what-are-handlers-)
 * [Changing Handlers](#changing-handlers)
 * [Available Handlers](#available-handlers)
 
