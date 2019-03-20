@@ -28,6 +28,8 @@ This is a guide to the many available annotations of Elepy.
     * [@DaoProvider](#-daoprovider)
     * [@IdProvider](#-idprovider)
     * [@ExtraRoutes](#-extraroutes)
+* [Dependency Injection and Routing](#dependency-injection-and-routing)
+
 
 
 # Annotations
@@ -95,6 +97,8 @@ This annotation signifies that a field should be hidden from the CMS.
 
  
 ## RestModel Annotations
+These are the annotations that are available for models in your CMS.
+
 ### RestModel
 This annotation is the only one you __need__ to mark your POJO with to make it a valid Elepy model. If you don't add this annotation, Elepy will not recognize your model. The __required__ properties are `slug` and `name`. The optional properties are `description`, `defaultSortField` and `defaultSortDirection`.
 
@@ -136,3 +140,17 @@ _coming soon..._
 _coming soon..._
 
 ### @ExtraRoutes
+
+## Dependency Injection and Routing
+
+### @Route
+_coming soon..._
+
+### @Inject
+_coming soon..._
+
+### @Tag
+_coming soon..._
+
+### @ElepyConstructor
+_coming soon..._
