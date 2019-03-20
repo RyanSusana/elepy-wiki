@@ -41,7 +41,7 @@ When configuring RestModels you have access to the five annotations: @Create, @F
 To change a handler for any of those functionalities, you change the handler property in the annotation and point to your new Handler class.
 
 In the UserDelete case it would be:
-```
+```java
 @RestModel(name="Users", slug="/users")
 @Delete(handler = UserDelete.class)
 public class User {
