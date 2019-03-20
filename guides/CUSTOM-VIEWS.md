@@ -3,6 +3,7 @@
 This an explanation guide of how I implemented https://docs.elepy.com in Kotlin. It will focus on the `@View` annotation.
 
 # The RestModel in Action
+Here is a video of the MarkdownEditor in action.
 <iframe src="https://player.vimeo.com/video/325447625" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 # How I implemented it
