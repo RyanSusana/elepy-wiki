@@ -6,7 +6,7 @@ Elepy 2 is the latest version of Elepy, [and is currently in BETA](https://githu
 ```xml
 <dependency>
     <groupId>com.elepy</groupId>
-    <artifactId>elepy-core</artifactId>
+    <artifactId>elepy-basic</artifactId>
     <version>2.0.0-beta-3</version>
 </dependency>
 ```
