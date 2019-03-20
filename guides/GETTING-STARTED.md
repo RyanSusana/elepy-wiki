@@ -1,5 +1,10 @@
 Elepy is awesome, but more importantly, easy! This guide shows how easy Elepy can be to get started with.
 
+### Step Zero: Basic Terminology
+Elepy knows the concept of RestModels. These are in essence a regular POJO(or POKO, for Kotlin users) annotated the [@RestModel](/docs/annotations#restmodel) annotation. These are the domain objects of your CMS.
+
+And that leads us to the next term, CMS. CMS means (Headless) Content Management System in the Elepy context. For more details of a Headless CMS is, [click here](https://en.wikipedia.org/wiki/Headless_content_management_system).
+
 ### Step One: Install Elepy with Maven
 The latest versions of elepy can be found at: https://elepy.com/docs/download
 #### Elepy Core
