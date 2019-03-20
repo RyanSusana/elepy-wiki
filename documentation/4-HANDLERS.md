@@ -13,7 +13,7 @@ Elepy has 5 handlers: CreateHandler, FindOneHandler, FindManyHandler, UpdateHand
 
 Let's take a look at a DeleteHandler:
 ```java
-public class UserDelete<User> implements DeleteHandler<User> {
+public class UserDelete implements DeleteHandler<User> {
 
     @Override
     public void handleDelete(HttpContext context, Crud<User> crud, ModelDescription<User> modelDescription, ObjectMapper objectMapper) {
