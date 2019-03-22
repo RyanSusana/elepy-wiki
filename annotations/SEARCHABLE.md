@@ -1,0 +1,2 @@
+# @Searchable
+This annotation signifies that a field is searchable, and should be considered implemented in the `Crud` interface. When you mark a field as searchable, you say that a field should be able to be queried for.
