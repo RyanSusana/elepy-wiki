@@ -9,7 +9,7 @@ You can use the `@Evaluators` to point to a PersonEvaluator(and maybe more, like
 @RestModel(name = "Persons", slug = "/persons")
 @Evaluators(PersonEvaluator.class)
 public class Person {
-    private String id, firstName, lastname, email;
+    private String id, firstName, lastName, email;
 
     //Getters and Setters. 
 }
