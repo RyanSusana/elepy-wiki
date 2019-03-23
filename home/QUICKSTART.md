@@ -1,5 +1,5 @@
 ### Step One: Create and annotate your POJO's
-Create your Rest Model. The only mandatory annotation is `@RestModel`. This annotation is where you describe the name and /slug of your model. You should also take a look at [the awesome collection of Elepy annotations](/docs/annotations).  [More about the Quick Start can be found here](/docs/https://elepy.com/docs/getting-acquainted-with-elepy).
+Create your Rest Model. The only mandatory annotation is `@RestModel`. This annotation is where you describe the name and /slug of your model. You should also take a look at [the awesome collection of Elepy annotations](/docs/annotations).  [More about the Quick Start can be found here](/docs/getting-acquainted-with-elepy).
 ``` java
 @RestModel(name = "Products", slug = "/products")
 public class Product {
