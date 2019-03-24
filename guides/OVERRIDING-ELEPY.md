@@ -50,7 +50,7 @@ public class Product {
 
 As you may have already seen, you can override Elepy's functionality with the `@Find`, `@Create`, `@Update` or `@Delete` annotations. When you use one of these annotations you can define two annotation properties, `accessLevel` or `handler`. 
 
-The `accessLevel` property is where you define the level of security on a model route. This can be `DISABLED`, `ADMIN` or `PUBLIC`. If a route is `DISABLED`, noone can access it. If a route is `ADMIN`, someone can access under certain circumstances(that you self-define, such as BasicAuth). If a route is `PUBLIC`, anyone can access it.
+The `accessLevel` property is where you define the level of security on a model route. This can be `DISABLED`, `PROTECTED` or `PUBLIC`. If a route is `DISABLED`, noone can access it. If a route is `PROTECTED`, someone can access it under certain circumstances(that you self-define, such as BasicAuth). If a route is `PUBLIC`, anyone can access it.
 
 The `handler` is where you define which class handles the execution of a route. For an update the default class is `com.elepy.routes.DefaultUpdate`. For our scenario we made a custom handler.
 
